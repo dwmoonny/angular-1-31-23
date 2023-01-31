@@ -17,7 +17,8 @@ import { SkillfairComponent } from './skillfair/skillfair.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-    ])
+      { path: 'skillfair', component: SkillfairComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
@@ -26,14 +27,11 @@ import { SkillfairComponent } from './skillfair/skillfair.component';
     NavComponent,
     HomemadeComponent,
     FooterComponent,
-    SkillfairComponent
+    SkillfairComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
